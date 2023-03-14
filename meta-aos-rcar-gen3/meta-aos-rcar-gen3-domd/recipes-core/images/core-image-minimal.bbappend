@@ -7,6 +7,7 @@ IMAGE_INSTALL += " \
     xen-tools-scripts-network \
     xen-tools-scripts-block \
     xen-tools-xenstore \
+    xen-tools-libvchan \
     xen-network \
     dnsmasq \
     block \
@@ -22,6 +23,7 @@ IMAGE_INSTALL += " \
     aos-iamanager \
     aos-servicemanager \
     aos-updatemanager \
+    aos-message-proxy \
 "
 
 ROOTFS_POSTPROCESS_COMMAND += "set_rootfs_version; create_unprovisioned_flag;"
